@@ -217,3 +217,9 @@ void drawCustomBackground(uint16_t color) {
   drawRectangle(0, 0, ST7735_TFTWIDTH, ST7735_TFTHEIGHT, color);
 }
 
+void drawChar(uint8_t startX, uint8_t startY, char drawChar) {
+}
+
+void drawString() {
+}
+

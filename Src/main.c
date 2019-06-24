@@ -692,10 +692,19 @@ void startDisplayTask(void const * argument)
         break;
       case CALC:
         ohms = (selectedValues[0] * 10 + selectedValues[1]) * 10^(selectedValues[2]);
-        
         if ((ohms / 10^9) > 0) { // Display G before ohms
+					// Check if 2nd digit in 10^8's spot
+					if ((ohms / 10^8) % 10 > 0) {
+					} else {
+					}
         } else if ((ohms / 10^6) > 0) { // Display M before Ohms
+					if ((ohms /10^5) % 10 > 0) {
+					} else {
+					}
         } else if ((ohms / 10^3) > 0) { // Display k before Ohms
+					if ((ohms /10^2) % 10 > 0) {
+					} else {
+					}
         } else {
         }
         currState = IDLE;

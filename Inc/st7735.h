@@ -1,5 +1,5 @@
-#ifndef _ST7735H_
-#define _ST7735H_
+#ifndef __ST7735_H__
+#define __ST7735_H__
 
 #include "stdint.h"
 #include "stm32f1xx_hal.h"
@@ -109,4 +109,6 @@ void drawRectangle(uint8_t x, uint8_t y, uint8_t w, uint8_t h, uint16_t color);
 void drawBlackBackground();
 void drawWhiteBackground();
 void drawCustomBackground(uint16_t color);
-#endif // _ST7735H
+
+// Font related functions
+#endif // __ST7735_H__
